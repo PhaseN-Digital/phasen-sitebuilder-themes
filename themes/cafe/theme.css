@@ -8,9 +8,23 @@ h1, h2 { font-weight: 400; }
 .hero h1, .hero p { margin-inline: auto; }
 main section h2 { text-align: center; }
 main section h2::after { content: ""; display: block; width: 40px; height: 2px; margin: 14px auto 0; background: var(--primary); }
-.split h2 { text-align: left; }
-.split h2::after { margin-left: 0; }
 .button { border-radius: 999px; padding: 14px 32px; }
 .form form { margin-inline: auto; background: color-mix(in srgb, var(--primary) 6%, var(--background)); padding: 28px; border-radius: var(--radius); }
 .form .wrap > p { text-align: center; }
 .site-footer { text-align: center; border-top: 0; background: color-mix(in srgb, var(--primary) 8%, var(--background)); }
+/* Layouts */
+.title-band { text-align: center; padding: 72px 0 8px; }
+.title-band h1 { font-weight: 400; font-size: clamp(2.2rem, 5vw, 3.2rem); }
+.title-band h1::after { content: ""; display: block; width: 40px; height: 2px; margin: 18px auto 0; background: var(--primary); }
+.post-meta { font-style: italic; }
+.card { background: color-mix(in srgb, var(--accent) 16%, var(--background)); border: 0; text-align: center; padding: 28px 24px; }
+.card h3 { font-weight: 400; font-size: 1.3rem; }
+.text h2, .layout-blog-post main section h2, .layout-legal main section h2, .contact-columns h2, .post-card h2, .layout-legal .title-band { text-align: left; }
+.layout-services .title-band + .text { text-align: center; }
+.text h2::after, .layout-blog-post main section h2::after, .layout-legal main section h2::after, .contact-columns h2::after, .layout-legal .title-band h1::after { margin-left: 0; }
+.post-card h2::after { display: none; }
+.contact-columns .form form { margin-inline: 0; }
+.post-card { background: color-mix(in srgb, var(--primary) 5%, var(--background)); border-radius: var(--radius); padding: 20px; }
+.pagination { border: 0; }
+.pagination [rel] { border: 1px solid var(--primary); border-radius: 999px; padding: 8px 22px; text-decoration: none; }
+@media (max-width: 760px) { .form form { padding: 20px; } }

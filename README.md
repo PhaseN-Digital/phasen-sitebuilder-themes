@@ -6,22 +6,27 @@ format as everything else here.
 
 ## Themes
 
-| Theme | Look | Font |
-|---|---|---|
-| `clean` | Light and simple, suits most businesses (built in). | Modern |
-| `bold` | Dark, big headings, strong colour (built in). | Modern |
-| `elegant` | Warm, centred, serif type (built in). | Classic serif |
-| `corporate` | Navy and slate, crisp and businesslike. | Modern |
-| `trades` | Charcoal with a strong amber accent. | Modern |
-| `cafe` | Warm cream and terracotta, serif headings. | Friendly |
-| `clinic` | Calm teal, light and airy. | Modern |
-| `professional` | Deep green and gold, classic serif type. | Classic serif |
-| `studio` | Bold black and white, large type. | Helvetica / Arial |
-| `community` | Friendly purple and orange, rounded shapes. | Rounded |
-| `minimal` | Monochrome, quiet and spacious. | Modern |
+| Theme | Look | Font | Previews |
+|---|---|---|---|
+| `clean` | Light and simple, suits most businesses (built in). | Modern | [home](previews/clean/home.png), [all layouts](previews/clean/) |
+| `bold` | Dark, big headings, strong colour (built in). | Modern | [home](previews/bold/home.png), [all layouts](previews/bold/) |
+| `elegant` | Warm, centred, serif type (built in). | Classic serif | [home](previews/elegant/home.png), [all layouts](previews/elegant/) |
+| `corporate` | Navy and slate, crisp and businesslike. | Modern | [home](previews/corporate/home.png), [all layouts](previews/corporate/) |
+| `trades` | Charcoal with a strong amber accent. | Modern | [home](previews/trades/home.png), [all layouts](previews/trades/) |
+| `cafe` | Warm cream and terracotta, serif headings. | Friendly | [home](previews/cafe/home.png), [all layouts](previews/cafe/) |
+| `clinic` | Calm teal, light and airy. | Modern | [home](previews/clinic/home.png), [all layouts](previews/clinic/) |
+| `professional` | Deep green and gold, classic serif type. | Classic serif | [home](previews/professional/home.png), [all layouts](previews/professional/) |
+| `studio` | Bold black and white, large type. | Helvetica / Arial | [home](previews/studio/home.png), [all layouts](previews/studio/) |
+| `community` | Friendly purple and orange, rounded shapes. | Rounded | [home](previews/community/home.png), [all layouts](previews/community/) |
+| `minimal` | Monochrome, quiet and spacious. | Modern | [home](previews/minimal/home.png), [all layouts](previews/minimal/) |
 
-All the added themes' default colours meet WCAG AA (4.5:1) for text on the
-background and for button and banner text.
+Every theme styles all eight page layouts (`home`, `standard`, `landing`,
+`services`, `contact`, `blog-post`, `blog-index`, `legal`). With each theme's
+default colours, all text on every layout meets WCAG AA (4.5:1), checked on
+the pages the app builds, at desktop width and at 390px with the mobile menu
+open. `previews/<theme>/<layout>.png` are 640x400 screenshots of each layout
+rendered by the app; they live outside `themes/` because a theme folder may
+only hold the three files below.
 
 ## Theme format
 

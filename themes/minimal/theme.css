@@ -16,3 +16,16 @@ main section { padding: 96px 0; }
 .site-footer { border-top: 0; font-size: .8rem; letter-spacing: .04em; padding: 48px 0; }
 .richtext blockquote { border-left-color: var(--text); }
 @media (max-width: 760px) { main section { padding: 64px 0; } .hero { padding: 96px 0; } }
+/* Layouts */
+.title-band { padding: 112px 0 16px; }
+.title-band h1 { font-weight: 400; font-size: clamp(2.2rem, 5vw, 3.4rem); letter-spacing: -.01em; }
+.post-meta { font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; }
+.title-band + section, .featured-image + section { padding-top: 48px; }
+.cards { gap: 32px; }
+.layout-services .title-band + .text { padding-bottom: 0; }
+.card { background: none; border: 0; border-top: 1px solid var(--text); border-radius: 0; padding: 24px 0 0; }
+.card h3 { font-weight: 500; }
+.post-list .wrap { gap: 64px; }
+.post-card h2 { font-weight: 500; }
+.pagination { border-top-color: var(--text); font-size: .85rem; text-transform: uppercase; letter-spacing: .12em; }
+@media (max-width: 760px) { .title-band { padding-top: 72px; } }

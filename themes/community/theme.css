@@ -5,8 +5,21 @@ h1, h2 { font-weight: 700; }
 .site-header nav a { font-weight: 600; }
 .hero { padding: 112px 0 128px; border-radius: 0 0 48px 48px; }
 .button { border-radius: 999px; padding: 14px 32px; font-weight: 700; }
-main section:nth-child(even):not(.hero) { background: color-mix(in srgb, var(--accent) 10%, var(--background)); }
+main > section:nth-child(even):not(.hero), main > .title-band ~ section:nth-child(odd):not(.hero) { background: color-mix(in srgb, var(--accent) 10%, var(--background)); }
+main > .title-band ~ section:nth-child(even):not(.hero) { background: none; }
 .gallery-grid { gap: 20px; }
 .form form { background: var(--background); padding: 32px; border-radius: var(--radius); box-shadow: 0 6px 24px color-mix(in srgb, var(--primary) 14%, transparent); }
 .form input, .form textarea { border-width: 2px; }
 .site-footer { border-top: 0; text-align: center; }
+/* Layouts */
+.title-band { background: var(--primary); color: var(--primary-text); padding: 56px 0 72px; border-radius: 0 0 48px 48px; }
+.title-band h1 { font-weight: 700; }
+.title-band .post-meta { opacity: 1; font-weight: 600; }
+.title-band + section, .featured-image + section { padding-top: 56px; }
+.layout-blog-post .featured-image { position: relative; margin-top: -40px; padding-top: 0; }
+.card { background: var(--background); border: 0; box-shadow: 0 6px 24px color-mix(in srgb, var(--primary) 14%, transparent); padding: 28px; }
+.card h3 { color: var(--primary); }
+.post-card { background: var(--background); border-radius: var(--radius); box-shadow: 0 6px 24px color-mix(in srgb, var(--primary) 12%, transparent); padding: 16px; }
+.pagination { border: 0; }
+.pagination [rel] { background: var(--accent); color: var(--accent-text); border-radius: 999px; padding: 10px 24px; font-weight: 700; text-decoration: none; }
+@media (max-width: 760px) { .form form { padding: 20px; } .title-band { border-radius: 0 0 28px 28px; } }
