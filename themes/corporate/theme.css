@@ -1,0 +1,11 @@
+:root { --radius: 4px; }
+.site-header { border-top: 4px solid var(--primary); }
+.site-header nav a { font-weight: 500; }
+.hero { padding: 120px 0; }
+.hero h1 { font-weight: 700; letter-spacing: -.01em; }
+main section:nth-child(even):not(.hero) { background: color-mix(in srgb, var(--primary) 5%, var(--background)); }
+main section h2 { font-weight: 700; }
+main section h2::after { content: ""; display: block; width: 48px; height: 3px; margin-top: 12px; background: var(--primary); }
+.button { font-weight: 600; letter-spacing: .01em; }
+.site-footer { background: var(--primary); color: var(--primary-text); opacity: 1; border: 0; }
+.site-footer a { color: inherit; }

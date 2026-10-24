@@ -1,0 +1,12 @@
+{
+  "label": "Studio",
+  "about": "Bold black and white, large type.",
+  "font": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+  "colors": {
+    "background": "#ffffff",
+    "text": "#0a0a0a",
+    "primary": "#0a0a0a",
+    "accent": "#ffe14d"
+  },
+  "version": "1.0.0"
+}

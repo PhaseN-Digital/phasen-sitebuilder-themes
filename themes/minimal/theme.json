@@ -1,0 +1,12 @@
+{
+  "label": "Minimal",
+  "about": "Monochrome, quiet and spacious.",
+  "font": "sans",
+  "colors": {
+    "background": "#ffffff",
+    "text": "#111111",
+    "primary": "#f2f2f2",
+    "accent": "#111111"
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,12 @@
+:root { --radius: 2px; }
+h1, h2 { font-weight: 400; }
+.site-header { border-bottom: 1px solid color-mix(in srgb, var(--text) 18%, transparent); }
+.brand { font-variant: small-caps; letter-spacing: .06em; font-weight: 600; }
+.site-header nav a { font-variant: small-caps; letter-spacing: .05em; font-size: 1.05rem; }
+.hero { padding: 128px 0; border-bottom: 4px solid var(--accent); }
+.hero h1 { font-weight: 400; letter-spacing: .01em; }
+main section + section:not(.hero) { border-top: 1px solid color-mix(in srgb, var(--text) 12%, transparent); }
+main section h2 { font-weight: 400; }
+.button { font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: .9rem; padding: 15px 30px; }
+.richtext blockquote { border-left-color: var(--accent); }
+.site-footer { border-top: 4px solid var(--primary); }

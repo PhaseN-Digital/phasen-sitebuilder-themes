@@ -1,0 +1,12 @@
+{
+  "label": "Clinic",
+  "about": "Calm teal, light and airy.",
+  "font": "sans",
+  "colors": {
+    "background": "#f7fbfb",
+    "text": "#1f3a3d",
+    "primary": "#0f766e",
+    "accent": "#f4b183"
+  },
+  "version": "1.0.0"
+}

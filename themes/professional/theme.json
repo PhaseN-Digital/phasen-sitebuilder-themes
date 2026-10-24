@@ -1,0 +1,12 @@
+{
+  "label": "Professional",
+  "about": "Deep green and gold, classic serif type.",
+  "font": "serif",
+  "colors": {
+    "background": "#fdfcf9",
+    "text": "#1f2a24",
+    "primary": "#1f4d3a",
+    "accent": "#dcb85a"
+  },
+  "version": "1.0.0"
+}

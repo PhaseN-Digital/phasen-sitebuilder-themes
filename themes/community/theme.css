@@ -1,0 +1,12 @@
+:root { --radius: 18px; }
+h1, h2 { font-weight: 700; }
+.site-header { border-bottom: 0; }
+.site-header .brand { color: var(--primary); font-size: 1.4rem; }
+.site-header nav a { font-weight: 600; }
+.hero { padding: 112px 0 128px; border-radius: 0 0 48px 48px; }
+.button { border-radius: 999px; padding: 14px 32px; font-weight: 700; }
+main section:nth-child(even):not(.hero) { background: color-mix(in srgb, var(--accent) 10%, var(--background)); }
+.gallery-grid { gap: 20px; }
+.form form { background: var(--background); padding: 32px; border-radius: var(--radius); box-shadow: 0 6px 24px color-mix(in srgb, var(--primary) 14%, transparent); }
+.form input, .form textarea { border-width: 2px; }
+.site-footer { border-top: 0; text-align: center; }

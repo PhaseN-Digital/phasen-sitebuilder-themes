@@ -1,0 +1,16 @@
+:root { --radius: 14px; }
+h1, h2, h3, .brand { font-family: Georgia, Cambria, "Times New Roman", serif; }
+h1, h2 { font-weight: 400; }
+.brand { font-size: 1.5rem; font-style: italic; font-weight: 400; }
+.site-header { border-bottom: 0; }
+.site-header .wrap { min-height: 84px; }
+.hero { padding: 128px 0; text-align: center; }
+.hero h1, .hero p { margin-inline: auto; }
+main section h2 { text-align: center; }
+main section h2::after { content: ""; display: block; width: 40px; height: 2px; margin: 14px auto 0; background: var(--primary); }
+.split h2 { text-align: left; }
+.split h2::after { margin-left: 0; }
+.button { border-radius: 999px; padding: 14px 32px; }
+.form form { margin-inline: auto; background: color-mix(in srgb, var(--primary) 6%, var(--background)); padding: 28px; border-radius: var(--radius); }
+.form .wrap > p { text-align: center; }
+.site-footer { text-align: center; border-top: 0; background: color-mix(in srgb, var(--primary) 8%, var(--background)); }
