@@ -1,0 +1,15 @@
+:root { --radius: 0; }
+h1, h2 { font-weight: 800; letter-spacing: -.03em; line-height: 1.05; }
+.site-header { border-bottom: 2px solid var(--text); }
+.brand { font-size: 1.5rem; font-weight: 800; letter-spacing: -.02em; }
+.site-header nav a { opacity: 1; font-weight: 500; }
+.site-header nav a:hover, .site-header nav a[aria-current] { color: var(--text); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+.hero { padding: 168px 0 144px; }
+.hero h1 { font-size: clamp(2.8rem, 8vw, 6rem); max-width: 14ch; margin-bottom: 28px; }
+main section { padding: 96px 0; }
+main section h2 { font-size: clamp(2rem, 5vw, 3.4rem); }
+.gallery-grid { gap: 4px; }
+.button { font-weight: 700; padding: 16px 32px; }
+.form input, .form textarea { border: 0; border-bottom: 2px solid var(--text); padding-inline: 0; }
+.site-footer { border-top: 2px solid var(--text); opacity: 1; }
+@media (max-width: 760px) { main section { padding: 64px 0; } .hero { padding: 96px 0; } }

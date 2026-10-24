@@ -4,6 +4,25 @@ CSS-only themes for [PhaseN Site Builder](https://github.com/PhaseN-Digital/phas
 `clean`, `bold` and `elegant` are the themes built into the app, in the same
 format as everything else here.
 
+## Themes
+
+| Theme | Look | Font |
+|---|---|---|
+| `clean` | Light and simple, suits most businesses (built in). | Modern |
+| `bold` | Dark, big headings, strong colour (built in). | Modern |
+| `elegant` | Warm, centred, serif type (built in). | Classic serif |
+| `corporate` | Navy and slate, crisp and businesslike. | Modern |
+| `trades` | Charcoal with a strong amber accent. | Modern |
+| `cafe` | Warm cream and terracotta, serif headings. | Friendly |
+| `clinic` | Calm teal, light and airy. | Modern |
+| `professional` | Deep green and gold, classic serif type. | Classic serif |
+| `studio` | Bold black and white, large type. | Helvetica / Arial |
+| `community` | Friendly purple and orange, rounded shapes. | Rounded |
+| `minimal` | Monochrome, quiet and spacious. | Modern |
+
+All the added themes' default colours meet WCAG AA (4.5:1) for text on the
+background and for button and banner text.
+
 ## Theme format
 
 Each theme is a folder `themes/<id>/`. The id is lowercase letters, digits and

@@ -1,0 +1,12 @@
+{
+  "label": "Café",
+  "about": "Warm cream and terracotta, serif headings.",
+  "font": "humanist",
+  "colors": {
+    "background": "#fbf6ee",
+    "text": "#3b2a20",
+    "primary": "#7a3e1d",
+    "accent": "#e9b872"
+  },
+  "version": "1.0.0"
+}

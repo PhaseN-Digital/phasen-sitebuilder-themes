@@ -1,0 +1,15 @@
+:root { --radius: 12px; }
+body { line-height: 1.7; }
+h1, h2 { font-weight: 600; letter-spacing: -.005em; }
+.site-header { border-bottom: 0; box-shadow: 0 1px 12px color-mix(in srgb, var(--primary) 12%, transparent); }
+.site-header .brand { color: var(--primary); }
+.hero { padding: 136px 0; }
+main section { padding: 88px 0; }
+main section h2 { margin-bottom: 20px; }
+.button { padding: 14px 30px; font-weight: 600; }
+.gallery-grid { gap: 24px; }
+.form form { background: color-mix(in srgb, var(--primary) 5%, var(--background)); padding: 32px; border-radius: var(--radius); }
+.form input, .form textarea { border-color: color-mix(in srgb, var(--primary) 30%, transparent); }
+.richtext blockquote { border-left-color: var(--accent); background: color-mix(in srgb, var(--primary) 5%, var(--background)); padding: 16px 24px; border-radius: 0 var(--radius) var(--radius) 0; }
+.site-footer { border-top: 0; background: color-mix(in srgb, var(--primary) 6%, var(--background)); }
+@media (max-width: 760px) { main section { padding: 64px 0; } .hero { padding: 96px 0; } }

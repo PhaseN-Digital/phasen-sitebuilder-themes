@@ -1,0 +1,14 @@
+:root { --radius: 0; }
+.site-header { background: var(--primary); border-bottom: 5px solid var(--accent); }
+.site-header .brand, .site-header nav a, .site-header .nav-toggle { color: var(--primary-text); }
+.site-header nav a { font-weight: 600; text-transform: uppercase; letter-spacing: .04em; font-size: .95rem; opacity: .85; }
+.site-header nav a:hover, .site-header nav a[aria-current] { color: var(--primary-text); opacity: 1; text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 3px; text-underline-offset: 6px; }
+h1, h2 { font-weight: 800; text-transform: uppercase; letter-spacing: .01em; }
+.hero { padding: 128px 0; }
+.hero h1 { max-width: 22ch; }
+main section h2 { border-left: 6px solid var(--accent); padding-left: 14px; }
+.button { font-weight: 800; text-transform: uppercase; letter-spacing: .06em; box-shadow: 4px 4px 0 color-mix(in srgb, var(--text) 85%, transparent); }
+.hero .button { box-shadow: none; }
+.form input, .form textarea { border-width: 2px; }
+.site-footer { background: var(--primary); color: var(--primary-text); opacity: 1; border: 0; }
+.site-footer a { color: inherit; }
