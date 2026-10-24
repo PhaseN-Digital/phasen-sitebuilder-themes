@@ -100,3 +100,7 @@ Nothing is committed straight to `main`; every change goes through a PR.
 from the app's (private) repo, which uses the same code to check themes
 before loading them. **The two copies must stay identical**: change both
 together, in a PR to each repo.
+
+## Licence
+
+All themes in this repository are released under the [MIT licence](LICENSE). By submitting a theme (for example via a pull request from PhaseN Site Builder), you agree to license it under the same terms and confirm you have the right to do so.
