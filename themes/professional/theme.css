@@ -10,3 +10,13 @@ main section h2 { font-weight: 400; }
 .button { font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: .9rem; padding: 15px 30px; }
 .richtext blockquote { border-left-color: var(--accent); }
 .site-footer { border-top: 4px solid var(--primary); }
+/* Layouts */
+.title-band { background: var(--primary); color: var(--primary-text); padding: 64px 0 56px; border-bottom: 4px solid var(--accent); }
+.title-band h1 { font-weight: 400; letter-spacing: .01em; }
+.title-band .post-meta { opacity: 1; font-variant: small-caps; letter-spacing: .05em; font-size: 1.05rem; }
+.title-band + section, .featured-image + section { padding-top: 56px; }
+.card { background: color-mix(in srgb, var(--primary) 4%, var(--background)); border: 1px solid color-mix(in srgb, var(--text) 12%, transparent); border-top: 3px solid var(--accent); }
+.card h3 { font-weight: 400; font-size: 1.3rem; font-variant: small-caps; letter-spacing: .04em; }
+.post-card h2 { font-weight: 400; }
+.post-card + .post-card { border-top: 1px solid color-mix(in srgb, var(--text) 12%, transparent); padding-top: 32px; }
+.pagination [rel] { font-variant: small-caps; letter-spacing: .05em; font-size: 1.05rem; }

@@ -1,7 +1,8 @@
 :root { --radius: 0; }
 .site-header { background: var(--primary); border-bottom: 5px solid var(--accent); }
 .site-header .brand, .site-header nav a, .site-header .nav-toggle { color: var(--primary-text); }
-.site-header nav a { font-weight: 600; text-transform: uppercase; letter-spacing: .04em; font-size: .95rem; opacity: .85; }
+.site-header nav a { font-weight: 600; text-transform: uppercase; letter-spacing: .04em; font-size: .9rem; opacity: .85; }
+.site-header nav { gap: 8px 16px; }
 .site-header nav a:hover, .site-header nav a[aria-current] { color: var(--primary-text); opacity: 1; text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 3px; text-underline-offset: 6px; }
 h1, h2 { font-weight: 800; text-transform: uppercase; letter-spacing: .01em; }
 .hero { padding: 128px 0; }
@@ -12,3 +13,16 @@ main section h2 { border-left: 6px solid var(--accent); padding-left: 14px; }
 .form input, .form textarea { border-width: 2px; }
 .site-footer { background: var(--primary); color: var(--primary-text); opacity: 1; border: 0; }
 .site-footer a { color: inherit; }
+/* Layouts */
+.title-band { background: var(--primary); color: var(--primary-text); padding: 56px 0 64px; }
+.title-band h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); border-left: 8px solid var(--accent); padding-left: 18px; }
+.title-band .post-meta { opacity: 1; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; padding-left: 26px; }
+.title-band + section, .featured-image + section { padding-top: 56px; }
+.layout-blog-post .featured-image { padding-top: 0; background: linear-gradient(var(--primary) 50%, transparent 50%); }
+.card { background: color-mix(in srgb, var(--text) 4%, var(--background)); border: 2px solid var(--text); box-shadow: 5px 5px 0 var(--accent); }
+.card h3 { font-weight: 800; text-transform: uppercase; letter-spacing: .02em; }
+.post-card h2 { border-left: 0; padding-left: 0; }
+.post-card + .post-card { border-top: 2px solid color-mix(in srgb, var(--text) 15%, transparent); padding-top: 32px; }
+.pagination [rel] { background: var(--accent); color: var(--accent-text); padding: 10px 20px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; text-decoration: none; }
+.layout-home main > .hero:not(:first-child) h2, .layout-landing .form h2 { border-left: 0; padding-left: 0; }
+.layout-home main > .hero:last-child { border-bottom: 5px solid var(--accent); }

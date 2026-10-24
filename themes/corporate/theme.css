@@ -3,9 +3,25 @@
 .site-header nav a { font-weight: 500; }
 .hero { padding: 120px 0; }
 .hero h1 { font-weight: 700; letter-spacing: -.01em; }
-main section:nth-child(even):not(.hero) { background: color-mix(in srgb, var(--primary) 5%, var(--background)); }
+main > section:nth-child(even):not(.hero), main > .title-band ~ section:nth-child(odd):not(.hero) { background: color-mix(in srgb, var(--primary) 5%, var(--background)); }
+main > .title-band ~ section:nth-child(even):not(.hero) { background: none; }
 main section h2 { font-weight: 700; }
 main section h2::after { content: ""; display: block; width: 48px; height: 3px; margin-top: 12px; background: var(--primary); }
 .button { font-weight: 600; letter-spacing: .01em; }
 .site-footer { background: var(--primary); color: var(--primary-text); opacity: 1; border: 0; }
 .site-footer a { color: inherit; }
+/* Layouts */
+.title-band { background: var(--primary); color: var(--primary-text); padding: 56px 0 52px; }
+.title-band h1 { font-weight: 700; letter-spacing: -.01em; }
+.title-band h1::after { content: ""; display: block; width: 48px; height: 3px; margin-top: 16px; background: var(--accent); }
+.title-band .post-meta { opacity: 1; }
+.title-band + section, .featured-image + section { padding-top: 48px; }
+.layout-blog-post .featured-image { padding-top: 0; background: linear-gradient(var(--primary) 50%, transparent 50%); }
+.card { background: var(--background); border: 1px solid color-mix(in srgb, var(--text) 12%, transparent); border-top: 3px solid var(--primary); box-shadow: 0 1px 3px rgb(0 0 0 / .06); }
+.card h3 { font-weight: 700; }
+.post-card h2::after { display: none; }
+.post-card { padding-bottom: 32px; border-bottom: 1px solid color-mix(in srgb, var(--text) 12%, transparent); }
+.pagination { border: 0; padding-top: 0; }
+.pagination [rel] { font-weight: 600; }
+.layout-landing .form h2::after { margin-inline: auto; }
+.layout-home main > .hero:last-child { border-bottom: 1px solid color-mix(in srgb, var(--primary-text) 20%, transparent); }

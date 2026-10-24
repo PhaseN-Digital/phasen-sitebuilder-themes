@@ -13,3 +13,23 @@ main section h2 { font-size: clamp(2rem, 5vw, 3.4rem); }
 .form input, .form textarea { border: 0; border-bottom: 2px solid var(--text); padding-inline: 0; }
 .site-footer { border-top: 2px solid var(--text); opacity: 1; }
 @media (max-width: 760px) { main section { padding: 64px 0; } .hero { padding: 96px 0; } }
+/* Layouts */
+.title-band { padding: 120px 0 40px; border-bottom: 2px solid var(--text); }
+.title-band h1 { font-size: clamp(2.8rem, 8vw, 6rem); max-width: 16ch; }
+.layout-blog-post .title-band h1 { font-size: clamp(2.2rem, 6vw, 4rem); }
+.layout-legal .title-band h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+.layout-blog-post .title-band { border: 0; padding-bottom: 0; }
+.post-meta { font-weight: 500; opacity: 1; margin-top: 20px; }
+.title-band + section, .featured-image + section { padding-top: 64px; }
+.layout-blog-post main section h2 { font-size: 2rem; }
+.layout-legal main section h2 { font-size: 1.6rem; }
+.cards { gap: 0; }
+.card { background: none; border: 2px solid var(--text); margin: 0 -2px -2px 0; padding: 32px; }
+.card h3 { font-size: 1.5rem; font-weight: 800; letter-spacing: -.02em; }
+.post-list .wrap { gap: 0; }
+.post-card { border-top: 2px solid var(--text); padding: 32px 0; }
+.post-card:first-child { border-top: 0; padding-top: 0; }
+.post-card h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.pagination { border-top: 2px solid var(--text); }
+.pagination [rel] { font-weight: 700; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+@media (max-width: 760px) { .title-band { padding-top: 72px; } }
