@@ -56,6 +56,7 @@ Nothing else is allowed in the folder.
 | `font` | yes | A built-in font id (`sans`, `serif`, `humanist`, `rounded`) or a CSS font stack such as `"Courier New", monospace`. Letters, digits, spaces, commas, quotes and dashes only. Use fonts people already have installed: themes can't load web fonts. |
 | `colors` | yes | Default `background`, `text`, `primary` (header/banner) and `accent` (buttons) colours, each `#rrggbb`. Users can change them afterwards. |
 | `version` | no | `major.minor.patch`. Bump it when you change the theme. |
+| `layouts` | no | Notes per page layout, e.g. `{ "home": { "notes": "Taller banner." } }`. Keys must be layout ids (below); each value may only have `notes`, a string up to 500 characters. |
 
 ### theme.css
 
@@ -73,9 +74,18 @@ The main classes you can style: `.site-header` (with `.brand` and `nav a`),
 `.site-footer`, `.notfound` (404 page), `.cookie-banner`, and `.wrap` (the
 centred content column). See `themes/bold/theme.css` for a short example.
 
+Every page has a layout, set as a class on `<body>`: `.layout-home`,
+`.layout-standard`, `.layout-landing`, `.layout-services`, `.layout-contact`,
+`.layout-blog-post`, `.layout-blog-index` and `.layout-legal`. Prefix rules
+with one to restyle just that kind of page, e.g. `.layout-home .hero { … }`.
+The app's base stylesheet already styles every layout, so these are optional.
+A `.layout-<id>` class with any other id is rejected.
+
 **CSS only.** Themes can't contain JavaScript or HTML templates, and the
 checks reject:
 
+- `.layout-<id>` selectors, or `layouts` keys in theme.json, naming an
+  unknown layout
 - `@import` (of anything), `javascript:` URLs, `expression()`,
   `behavior:`/`-moz-binding`, and any `<` character
 - a `theme.css` over 32 KB
@@ -99,7 +109,17 @@ Nothing is committed straight to `main`; every change goes through a PR.
 `scripts/theme-validate.js` is a vendored copy of `lib/theme-validate.js`
 from the app's (private) repo, which uses the same code to check themes
 before loading them. **The two copies must stay identical**: change both
-together, in a PR to each repo.
+together, in a PR to each repo. It is self-contained (Node stdlib only), and
+carries its own copy of the app's layout ids (`LAYOUT_IDS`); the app's tests
+check that list matches the app's layouts.
+
+To re-sync after the app's copy changes, from a checkout of the app repo:
+
+```
+cp lib/theme-validate.js ../phasen-sitebuilder-themes/scripts/theme-validate.js
+```
+
+then run `node scripts/theme-validate.js themes` here and open a PR.
 
 ## Licence
 
