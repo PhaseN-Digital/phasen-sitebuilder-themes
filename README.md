@@ -38,6 +38,10 @@ themes/<id>/
   theme.json    required
   theme.css     required
   preview.png   optional, a screenshot (PNG, at most 512 KB)
+  header.html   optional HTML templates (see "HTML templates" below)
+  footer.html
+  section.html
+  layout-<id>.html
 ```
 
 Nothing else is allowed in the folder.
@@ -86,15 +90,28 @@ with one to restyle just that kind of page, e.g. `.layout-home .hero { … }`.
 The app's base stylesheet already styles every layout, so these are optional.
 A `.layout-<id>` class with any other id is rejected.
 
-**CSS only.** Themes can't contain JavaScript or HTML templates, and the
-checks reject:
+### HTML templates
+
+Optional, at most 16 KB each: `header.html`, `footer.html`, `section.html`
+(wraps every section) and `layout-<id>.html` (the inside of `<main>` for that
+layout id). A theme without them uses the app's built-in markup. They may only
+use `{{name}}` placeholders and `{{#if name}} … {{/if}}`; `{{menu}}` (header),
+`{{footer.links}}` (footer) and `{{content}}` (section, layouts) are required.
+The placeholders, elements and attributes allowed in each are listed in
+`TEMPLATES`, `TAGS` and `ATTRS` in `scripts/theme-validate.js`. The checks
+reject scripts, `<style>`, event handlers, forms, `javascript:`/`data:` URLs,
+external resources (except https images from `IMAGE_HOSTS`) and iframes other
+than YouTube (nocookie) and Vimeo players.
+
+**No JavaScript.** The checks also reject:
 
 - `.layout-<id>` selectors, or `layouts` keys in theme.json, naming an
   unknown layout
 - `@import` (of anything), `javascript:` URLs, `expression()`,
   `behavior:`/`-moz-binding`, and any `<` character
 - a `theme.css` over 32 KB
-- any file other than `theme.json`, `theme.css` and `preview.png`
+- any file other than `theme.json`, `theme.css`, `preview.png` and the
+  templates above
 
 ## Contributing
 
