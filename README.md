@@ -26,7 +26,7 @@ default colours, all text on every layout meets WCAG AA (4.5:1), checked on
 the pages the app builds, at desktop width and at 390px with the mobile menu
 open. `previews/<theme>/<layout>.png` are 640x400 screenshots of each layout
 rendered by the app; they live outside `themes/` because a theme folder may
-only hold the three files below.
+only hold the files below.
 
 ## Theme format
 
@@ -38,6 +38,8 @@ themes/<id>/
   theme.json    required
   theme.css     required
   preview.png   optional, a screenshot (PNG, at most 512 KB)
+  preview-<layout>.png  optional, a screenshot of one page layout
+                (e.g. preview-services.png; same limits)
   header.html   optional HTML templates (see "HTML templates" below)
   footer.html
   section.html
@@ -110,8 +112,8 @@ than YouTube (nocookie) and Vimeo players.
 - `@import` (of anything), `javascript:` URLs, `expression()`,
   `behavior:`/`-moz-binding`, and any `<` character
 - a `theme.css` over 32 KB
-- any file other than `theme.json`, `theme.css`, `preview.png` and the
-  templates above
+- any file other than `theme.json`, `theme.css`, `preview.png`,
+  `preview-<layout>.png` (a known layout id) and the templates above
 
 ## Contributing
 
